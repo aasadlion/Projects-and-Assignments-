@@ -10,85 +10,157 @@
     </style>
   </head>
   <body>
-    <div id="head">
-      <p class="pd">
-        11/10/21, 01:56 PM <span style="padding-left: 50%">Sign In Form</span>
-      </p>
+    <div>
+      <div id="head">
+        <p class="pd">
+          11/10/21, 01:56 PM <span style="padding-left: 50%">Sign In Form</span>
+        </p>
 
-      <h1 class="pd">J.K.M.B Mallick High School</h1>
-      <h2 class="pd">Admission Form</h2>
+        <h1 class="pd">J.K.M.B Mallick High School</h1>
+        <h2 class="pd">Admission Form</h2>
 
+        <hr style="width: 89.5%; border: 2px rgb(0, 0, 0) solid" />
+      </div>
+
+      <div class="pd" id="Personal Information">
+        <h1>Personal Information</h1>
+
+        <form action="">
+          <!-- NAME:  -->
+          <label style="font-weight: 600" for="Name">NAME: </label>
+          <input
+            style="font-weight: 500; margin-left: 10%"
+            type="text"
+            size="25"
+            value="Name"
+            placeholder=" Asad Iqbal"
+          />
+          <!-- FATHER'S NAME -->
+          <br />
+          <br />
+          <label style="font-weight: 600" for="Name">FATHER'S NAME: </label>
+          <input
+            style="font-weight: 500; margin-left: 3.5%"
+            type="text"
+            value="Father's Name"
+            size="25"
+            placeholder="M Iqbal"
+          />
+          <!-- CNIC -->
+          <br />
+          <br />
+          <label style="font-weight: 600" for=" CNIC">CNIC: </label>
+          <input
+            style="font-weight: 500; margin-left: 10.5%"
+            type="number"
+            value="CNIC"
+            size="25"
+            placeholder="33102-0000000-3"
+          />
+          <!-- DOB -->
+          <br />
+          <br />
+          <label style="font-weight: 600" for="DOB">D-O-B: </label>
+          <input
+            style="font-weight: 500; margin-left: 10%"
+            type="date"
+            value="DOB"
+            size="25"
+            placeholder="33102-0000000-3"
+          />
+          <!-- EMAIL -->
+
+          <br />
+          <br />
+          <label style="font-weight: 600" for="email">EMAIL: </label>
+          <input
+            style="font-weight: 500; margin-left: 9.5%"
+            type="email"
+            value="EMAIL"
+            size="25"
+            placeholder="abc@gmail.com"
+          />
+          <!-- color -->
+          <br />
+          <br />
+          <label  style="font-weight: 600" for="Name">FAVORITE COLOR: </label>
+          <input
+            style="font-weight: 500; margin-left: 2.5%"
+            type="color"
+
+            value="color"
+          />
+        
+      </div>
+      <br /><br />
       <hr style="width: 89.5%; border: 2px rgb(0, 0, 0) solid" />
-    </div>
-
-    <div class="pd" id="Personal Information">
-      <h1>Personal Information</h1>
-
-      <form action="">
-        <!-- NAME:  -->
-        <label style="font-weight: 600" for="Name">NAME: </label>
+      <br /><br />
+      <div class="pd" id="Residential_Information">
+        <!-- CITY NAME  -->
+        <label style="font-weight: 600" for="cname">CITY NAME: </label>
         <input
-          style="font-weight: 500; margin-left: 10%"
+          style="font-weight: 500; margin-left: 6.5%"
           type="text"
           size="25"
-          value="Name"
+          value="City Name"
           placeholder=" Asad Iqbal"
         />
-        <!-- FATHER'S NAME -->
-        <br />
-        <br />
-        <label style="font-weight: 600" for="Name">FATHER'S NAME: </label>
+
+        <!-- PROVINCE -->
+        <br /><br />
+        <label style="font-weight: 600" for="PROVINCE">PROVINCE: </label>
+        <select style="font-weight: 500; margin-left: 7%" name="PROVINCE" id="">
+          <option selected value="Punjab">Punjab</option>
+          <option value="KPK">KPK</option>
+          <option value="sindh">sindh</option>
+        </select>
+        <br /><br />
+
+        <!-- COUNTRY: -->
+
+        <label style="font-weight: 600" for="PROVINCE">COUNTRY:</label>
+        <select
+          style="font-weight: 500; margin-left: 7.5%"
+          name="COUNTRY"
+          id=""
+        >
+          <option selected value="Punjab">Pakistan</option>
+          <option value="KPK">USA</option>
+          <option value="sindh">UAE</option>
+        </select>
+        <br /><br />
+        <!-- Gender -->
+        <label style="font-weight: 600"  >GENDER:</label>
+        <input style="font-weight: 500; margin-left: 8%" type="radio" name="GENDER"  id="male"/> &nbsp;
+
+        <label for="male">MALE</label>
+
         <input
           style="font-weight: 500; margin-left: 3.5%"
-          type="text"
-          value="Father's Name"
-          size="25"
-          placeholder="M Iqbal"
+          value="MALE"
+          id="female"
+          name="GENDER"
+          type="radio"
         />
-        <!-- CNIC -->
-        <br />
-        <br />
-        <label style="font-weight: 600" for="Name">CNIC: </label>
+<!-- female -->
+        <label for="female">FEMALE</label>
         <input
-          style="font-weight: 500; margin-left: 10.5%"
-          type="number"
-          value="CNIC"
-          size="25"
-          placeholder="33102-0000000-3"
+          style="font-weight: 500; margin-left: 3.5%"
+          value="OTHER"
+          type="radio" name="GENDER" id="other"
         />
-        <!-- DOB -->
-        <br />
-        <br />
-        <label style="font-weight: 600" for="Name">D-O-B: </label>
-        <input
-          style="font-weight: 500; margin-left: 10%"
-          type="date"
-          value="DOB"
-          size="25"
-          placeholder="33102-0000000-3"
-        />
-        <!-- EMAIL -->
+<!-- other -->
+        <label for="other">OTHER</label>
+      </div>
+      <br /><br />
+      <hr style="width: 89.5%; border: 2px rgb(0, 0, 0) solid" />
+      <!-- Academic Information -->
+<div class="pd" id="AcademicInformation">
 
-        <br />
-        <br />
-        <label style="font-weight: 600" for="Name">EMAIL: </label>
-        <input
-          style="font-weight: 500; margin-left: 9.5%"
-          type="email"
-          value="EMAIL"
-          size="25"
-          placeholder="abc@gmail.com"
-        />
-        <!-- color -->
-        <br />
-        <br />
-        <label style="font-weight: 600" for="Name">FAVORITE COLOR: </label>
-        <input
-          style="font-weight: 500; margin-left: 2.5%"
-          type="color"
-          value="color"
-        />
-      </form>
+  <h1>Academic Information  </h1>
+</div>
+
+    </form>
     </div>
   </body>
 </html>
